@@ -2,6 +2,171 @@
 T6ebP4E6 */
 
 
+
+
+
+
+/* -----------------------------------------------------------
+   MOBILE RESPONSIVE OVERRIDES (Targeting screens < 768px)
+   ----------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    /* 1. Banner & Hero Section */
+    #banner {
+        height: 400px !important; 
+        background-position: center;
+        background-size: cover;
+    }
+
+    .banner_words {
+        padding-top: 120px !important; 
+        padding-left: 0 !important;
+        text-align: center;
+    }
+
+    .my_name, .my_aim {
+        font-size: 26px !important;
+        margin-left: 0 !important;
+        white-space: normal !important; /* Allows text to wrap if name is long */
+    }
+
+    /* 2. MERN / Key Area Section */
+    #key_area .flex-row {
+        flex-direction: column !important; 
+    }
+
+    /* Escaped the slash for Tailwind class w-1/2 */
+    #key_area .w-1\/2 { 
+        width: 100% !important; 
+        padding: 15px !important;
+    }
+
+    .carousel {
+        height: 250px !important; 
+    }
+
+    /* 3. Services Cards (The Grid) */
+    .grid.card {
+        grid-template-columns: repeat(1, 1fr) !important; /* Stack 1 card per row */
+        margin-left: 0 !important;
+        padding: 20px !important;
+        gap: 50px !important; /* Adds the missing space between cards */
+    }
+
+    .size {
+        width: 100% !important;
+        height: auto !important;
+        margin-bottom: 10px;
+    }
+
+    .wrk_heading {
+        margin-left: 0 !important;
+        text-align: center;
+        font-size: 24px !important;
+        margin-top: 15px;
+    }
+
+    .img_card {
+        width: 100% !important;
+        border-radius: 20px;
+    }
+
+    /* 4. Developer Quote & Footer */
+    .developer {
+        margin-left: 20px !important;
+        margin-right: 20px !important;
+        font-size: 18px !important;
+        text-align: center;
+    }
+
+    footer .grid-cols-2, 
+    footer .sm:grid-cols-3 {
+        grid-template-columns: 1fr !important; /* Stack footer links */
+        text-align: center;
+        gap: 30px !important;
+    }
+
+    .distance_logo {
+        justify-content: center !important;
+        margin-bottom: 20px;
+    }
+
+    /* 5. About Page & Skills */
+    .about_heading {
+        padding-left: 0 !important;
+        text-align: center;
+        font-size: 2.2em !important;
+    }
+
+    .about_data {
+        flex-direction: column !important;
+    }
+
+    .about_img_div {
+        width: 100% !important;
+    }
+
+    .skill_header {
+        margin-left: 0 !important;
+        text-align: center;
+        font-size: 2.2em !important;
+    }
+
+    #skills {
+        padding-left: 0 !important;
+        display: flex;
+        justify-content: center;
+    }
+
+    .card-container_about {
+        justify-content: center !important;
+        gap: 25px !important;
+    }
+
+    /* 6. Contact Form */
+    .form-container {
+        width: 92% !important;
+        padding: 20px !important;
+    }
+
+    @media (max-width: 768px) {
+    /* 7. Works Section Fix - Centering the Grid */
+    .photo-containers {
+        display: grid !important;
+        grid-template-columns: 1fr !important; /* One column on mobile */
+        justify-items: center !important;     /* Centers the images horizontally */
+        align-items: center !important;
+        gap: 30px !important;                 /* Vertical space between project images */
+        padding: 20px !important;
+        width: 100% !important;
+    }
+    .rounded{
+      color: #edde04 ;
+    }
+    .photo-containers img {
+        width: 90% !important;                /* Makes the image fill most of the screen width */
+        max-width: 400px;                     /* Prevents them from getting too huge on tablets */
+        height: auto !important;
+        border-radius: 12px;                  /* Optional: makes them look like cards */
+        box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    }
+    
+    /* Ensure the link wrapper doesn't break alignment */
+    #my_works a {
+        display: block;
+        width: 100%;
+    }
+}
+
+    /* 8. Navigation Menu Visibility */
+    #navbar-dropdown ul {
+        background-color: #111827 !important; /* Darker bg for mobile menu */
+        border: none !important;
+        margin-top: 10px;
+    }
+}
+
+
 /* ---------------------------------------Home page css------------------------------------ */
 * {
   /* font-family: "Montserrat", sans-serif !important ; */
@@ -555,5 +720,11 @@ button:not(:disabled):active {
 .photo-containers img {
   height: 208px;
   width: 82%;
+}
+
+/* mern class */
+@font-face{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  src: url('');
 }
 
