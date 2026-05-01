@@ -9,7 +9,11 @@ T6ebP4E6 */
 /* -----------------------------------------------------------
    MOBILE RESPONSIVE OVERRIDES (Targeting screens < 768px)
    ----------------------------------------------------------- */
-
+* {
+    max-width: 100vw !important;
+    overflow-x: hidden !important;
+    box-sizing: border-box !important;
+}
 @media (max-width: 768px) {
     /* 1. Banner & Hero Section */
     #banner {
